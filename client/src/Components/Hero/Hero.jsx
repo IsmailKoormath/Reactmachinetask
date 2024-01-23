@@ -4,6 +4,7 @@ import classes from './Hero.module.css'
 
 import profile from '../../Assets/Rectangle 10.png'
 import smile from '../../Assets/smile.png'
+import PieChart from '../../Pages/Home/Components/Pie_chart/Pie_chart'
 const Hero = () => {
   return (
     <div className={classes.Hero_section}>
@@ -17,7 +18,10 @@ const Hero = () => {
           <img src={profile} alt="profile" />
         </div>
       </div>
-      <LineChart />
+      <div className={classes.chartSection}>
+        <LineChart />
+        <PieChart />
+      </div>
     </div>
   )
 }

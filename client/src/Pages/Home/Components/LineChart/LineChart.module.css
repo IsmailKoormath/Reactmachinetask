@@ -1,9 +1,11 @@
 .linechart{
     width: 50rem;
-    height: 25rem;
+    height: 30rem;
     background-color: white;
-    padding: 1rem 1.5rem;
+    padding: 0rem 1.5rem;
     border-radius: 1rem;
-    box-shadow: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }

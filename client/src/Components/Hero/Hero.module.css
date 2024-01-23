@@ -38,3 +38,8 @@
     height: 40px;
     padding: .3rem;
  }
+ .chartSection{
+   width: 100%;
+   display: flex;
+   gap: 2rem;
+ }

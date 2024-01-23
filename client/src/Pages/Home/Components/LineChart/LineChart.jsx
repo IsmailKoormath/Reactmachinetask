@@ -21,7 +21,7 @@ const data = {
         data: [10, 15, 8, 12, 18],
         fill: false,
         borderColor: 'rgb(75, 192, 192)',
-        backgroundColor:'rgb(75, 192, 192)',
+        backgroundColor: 'rgb(75, 192, 192)',
         tension: 0.1
     }]
 
@@ -30,6 +30,9 @@ const options = {
     responsive: true,
     plugins: {
 
+    },
+    legend: {
+        display: false 
     },
     scale: {
         y: {

@@ -1,10 +1,40 @@
-.Hero_section{
-    width: 100%;
-    padding: 3rem 5rem;
-    background-color: #E8EDFF;
+.Hero_section {
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: #e8edff;
 }
-.Hero_section h4{
-    margin-bottom: 3rem;
-    font-size: 1.3rem;
-    font-weight: 600;
+.Hero_section h4 {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
 }
+.Hero_section h4 img{
+   width: 2.5rem;
+}
+.hero_top{
+    display: flex;
+    justify-content: space-between;
+}
+ .profile {
+  max-width: 11rem;
+  max-height: 3.4rem;
+  padding: .5rem;
+  display: flex;
+  background-color: white;
+  border-radius: .5rem;
+}
+.profileDetails{
+    height: 100%;
+}
+ .profile h6{
+    font-size: 14px;
+ }
+ .profile span{
+    font-size: 11px;
+ }
+ .profile img{
+    height: 40px;
+    padding: .3rem;
+ }

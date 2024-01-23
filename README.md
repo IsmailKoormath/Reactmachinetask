@@ -2,24 +2,24 @@
 Statboard
 
 
-### Backend
+## Backend
 
 1. Navigate to the server directory:
-    ## cd server
+    ### cd server
    
 2. Install backend dependencies:
-    ## npm install
+    ### npm install
 
 3. Run the backend server:
-    ## node server.js
+    ### node server.js
 
-### Frontend
+## Frontend
 
 1. Navigate to the client directory:
-    ## cd client
+    ### cd client
   
 2. Install frontend dependencies:
-    ## npm install
+    ### npm install
 
 3. Run the frontend application:
-    ## npm start
+    ### npm start

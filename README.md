@@ -2,11 +2,24 @@
 Statboard
 
 
-<h5>Navigate to the project's client directory:</h5>
-<h4>cd client</h4>
+### Backend
 
-<h5>Install the dependencies:</h5>
-<h4>npm install</h4>
+1. Navigate to the server directory:
+   cd server
+   
+2.Install backend dependencies:
+  npm install
 
-<h5>Usage: to start the frontend:</h5>
-<h4>npm start</h4>
+3.Run the backend server:
+  node server.js
+
+### Frontend
+
+1.Navigate to the client directory:
+  cd client
+  
+2.Install frontend dependencies:
+  npm install
+
+3.Run the frontend application:
+  npm start

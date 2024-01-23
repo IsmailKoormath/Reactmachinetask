@@ -1,9 +1,11 @@
 .Pie_chart {
+  max-width: 17rem;
   width: 100%;
-  max-width: 20rem;
   height: auto;
+   display: flex; 
+   flex-direction: column; 
+  align-items: center;
   background-color: white;
-  padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -17,8 +19,9 @@
 }
 
 .categories {
-  display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
+  padding: 1rem;
+
 }
 
 .ColorBox {

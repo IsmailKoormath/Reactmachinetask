@@ -1,8 +1,7 @@
 .linechart {
-    max-width: 50rem;
-    max-height: 30rem;
+    width: 44rem;
     width: 100%;
-    height: auto;
+    max-height: 23;
     background-color: white;
     padding: 0rem 1.5rem;
     border-radius: 1rem;

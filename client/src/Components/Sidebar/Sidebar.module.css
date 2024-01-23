@@ -1,10 +1,20 @@
 .sidebar {
+  position: sticky;
+  top: 0;
   width: 18%;
   background-image: url("../../Assets/Rectangle\ 1.png ");
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 9;
+}
+.cross {
+  width: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  display: none;
 }
 .logo {
   display: flex;
@@ -15,20 +25,27 @@
 .sidebar .pageLinks {
   display: flex;
   flex-direction: column;
- align-items: flex-end;
+  align-items: flex-end;
   gap: 1.5rem;
 }
-.logout{
-    display: flex;
- background-color: white;
- align-items: center;
- justify-content: center;
- gap: 6px;
- padding: 1rem 2rem;
- color:red;
- font-size: 15px;
-
+.logout {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 1rem 2rem;
+  color: red;
+  font-size: 15px;
 }
-.logout img{
-    margin-top: 3px;
+.logout img {
+  margin-top: 3px;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+  .cross {
+    display: block;
+  }
 }

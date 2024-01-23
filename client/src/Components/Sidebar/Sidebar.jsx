@@ -6,13 +6,15 @@ import menu from '../../Assets/Circled Menu.png'
 import support from '../../Assets/Support.png'
 import plugins from '../../Assets/Puzzle.png'
 import help from '../../Assets/Help.png'
+import cross from '../../Assets/cross.png'
 
 import classes from './Sidebar.module.css'
 import CustomButton from '../CustomButton/CustomButton'
 
-const Sidebar = () => {
+const Sidebar = ({ handleSidebar }) => {
   return (
     <div className={classes.sidebar}>
+      <img className={classes.cross} onClick={handleSidebar} src={cross} alt="cross" />
       <div className={classes.logo}>
         <img src={Briefcase} alt="Briefcase" />
         <img src={statBoard} alt="statBoard" />

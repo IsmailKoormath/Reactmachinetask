@@ -8,6 +8,7 @@ ChartJs.register(ArcElement, Legend, Tooltip);
 
 
 const options = {
+    responsive: true,
     plugins: {
         legend: {
             position: 'bottom',
@@ -26,7 +27,6 @@ const PieChart = () => {
     useEffect(() => {
         axios.get('http://localhost:3001/api/pie-chart')
             .then((response) => {
-                console.log(response.data);
                 setCategory(response.data);
             })
             .catch((error) => {
@@ -35,7 +35,7 @@ const PieChart = () => {
     }, []);
 
     const data = {
-        labels: category.map(categ=>categ.label),
+        labels: category.map(categ => categ.label),
         datasets: [
             {
                 data: category.map(categ => categ.value),
@@ -55,7 +55,9 @@ const PieChart = () => {
 
     return (
         <div className={classes.Pie_chart}>
-            <Pie data={data} options={options} />
+            <div style={{width:'13rem' ,height:'13rem'}}>
+                <Pie data={data} options={options} />
+            </div>
             <ul className={classes.LabelList}>
                 {category && category.map((cate, index) => (
                     <li key={index}>

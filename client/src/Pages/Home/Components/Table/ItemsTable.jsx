@@ -9,7 +9,9 @@ const ItemsTable = () => {
     useEffect(() => {
         axios.get('http://localhost:3001/api/table').then((Response) => {
             setItems(Response.data)
-        })
+        }).catch((error) => {
+            console.error('Error fetching data:', error);
+        });
 },[])
     return (
         <>

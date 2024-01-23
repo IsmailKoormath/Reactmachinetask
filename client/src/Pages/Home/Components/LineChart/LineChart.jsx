@@ -20,9 +20,9 @@ Chartjs.register(
 const options = {
     responsive: true,
     plugins: {},
-    legend: {
-        display: false
-    },
+    // legend: {
+    //     display: false
+    // },
     scales: {
         y: {
             beginAtZero: true,
@@ -40,7 +40,10 @@ const LineChart = () => {
     useEffect(() => {
         axios.get('http://localhost:3001/api/graph').then((response) => {
             setProgress(response.data);
-        });
+        })
+         .catch((error) => {
+             console.error('Error fetching data:', error);
+         });
     }, []);
 
     const chartData = {
@@ -58,8 +61,8 @@ const LineChart = () => {
 
     return (
         <div className={classes.linechart}>
-            <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                <Line data={chartData} options={options} />
+            <div style={{ width: "100%", height: "100%" }}>
+                <Line  data={chartData} options={options} />
             </div>
         </div>
     );

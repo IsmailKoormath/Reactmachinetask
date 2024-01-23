@@ -2,8 +2,10 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from 'react-bootstrap/Table';
 import classes from './UserTable.module.css'
+import Pagination from '@mui/material/Pagination';
 const UsersTable = () => {
     return (
+        <>
         <div className={classes.users}>
             <Table striped bordered hover>
                 <thead>
@@ -24,7 +26,10 @@ const UsersTable = () => {
 
                 </tbody>
             </Table>
+                <Pagination count={10} variant="outlined" shape="rounded" />
+
         </div>
+        </> 
     )
 }
 

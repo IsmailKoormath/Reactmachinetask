@@ -1,3 +1,5 @@
-.HomePage{
-    display: flex;
+.HomePage {
+  position: relative;
+  display: flex;
+  background-color: #e8edff;
 }

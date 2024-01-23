@@ -1,11 +1,10 @@
 import React from 'react'
-import menu from '../../Assets/Circled Menu.png'
 import classes from './CustomButtton.module.css'
-const CustomButton = () => {
+const CustomButton = ({ color, backgrond, text, img }) => {
   return (
-    <div style={{backgroundColor:"white"}} className={classes.custombutton}>
-          <img src={menu} alt="menu" />
-          <span>Dashboard</span>
+    <div style={{ backgroundColor: { backgrond }, color: { color } }} className={classes.custombutton}>
+      <img src={img} alt="menu" />
+      <span>{text}</span>
     </div>
   )
 }

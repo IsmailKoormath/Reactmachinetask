@@ -1,5 +1,5 @@
-import React from 'react'
-import classes from './LineChart.module.css'
+import React from 'react';
+import classes from './LineChart.module.css';
 import { Line } from 'react-chartjs-2';
 import {
     Chart as Chartjs,
@@ -7,52 +7,51 @@ import {
     CategoryScale,
     LinearScale,
     PointElement
-} from 'chart.js'
+} from 'chart.js';
 
 Chartjs.register(
     LineElement,
     CategoryScale,
     LinearScale,
     PointElement
-)
+);
+
 const data = {
     labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
     datasets: [{
         data: [10, 15, 8, 12, 18],
         fill: false,
-        borderColor: 'rgb(75, 192, 192)',
-        backgroundColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgb(124, 196, 196)',
+        backgroundColor: 'rgb(124, 196, 196)',
         tension: 0.1
     }]
+};
 
-}
 const options = {
     responsive: true,
-    plugins: {
-
-    },
+    plugins: {},
     legend: {
-        display: false 
+        display: false
     },
-    scale: {
+    scales: {
         y: {
             beginAtZero: true,
-            max: 20, // Set the maximum value for the y-axis
+            max: 20,
             ticks: {
-                stepSize: 5, // Set the interval between ticks
-
+                stepSize: 5,
             }
         }
     }
-}
+};
 
 const LineChart = () => {
     return (
         <div className={classes.linechart}>
-            <Line data={data} options={options} />
-
+            <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Line data={data} options={options} />
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default LineChart
+export default LineChart;

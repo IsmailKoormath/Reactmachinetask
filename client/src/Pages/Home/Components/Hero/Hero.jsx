@@ -1,10 +1,12 @@
 import React from 'react'
-import LineChart from '../../Pages/Home/Components/LineChart/LineChart'
+import LineChart from '../LineChart/LineChart'
 import classes from './Hero.module.css'
 
-import profile from '../../Assets/Rectangle 10.png'
-import smile from '../../Assets/smile.png'
-import PieChart from '../../Pages/Home/Components/Pie_chart/Pie_chart'
+import profile from '../../../../Assets/Rectangle 10.png'
+import smile from '../../../../Assets/smile.png'
+import PieChart from '../Pie_chart/Pie_chart'
+import UsersTable from '../Table/UserTable'
+import UserCard from '../UserCard/UserCard'
 const Hero = () => {
   return (
     <div className={classes.Hero_section}>
@@ -21,6 +23,10 @@ const Hero = () => {
       <div className={classes.chartSection}>
         <LineChart />
         <PieChart />
+      </div>
+      <div className={classes.table_section}>
+        <UsersTable />
+        <UserCard />
       </div>
     </div>
   )

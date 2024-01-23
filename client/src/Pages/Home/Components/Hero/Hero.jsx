@@ -5,8 +5,8 @@ import classes from './Hero.module.css'
 import profile from '../../../../Assets/Rectangle 10.png'
 import smile from '../../../../Assets/smile.png'
 import PieChart from '../Pie_chart/Pie_chart'
-import UsersTable from '../Table/UserTable'
 import UserCard from '../UserCard/UserCard'
+import ItemsTable from '../Table/ItemsTable'
 const Hero = () => {
   return (
     <div className={classes.Hero_section}>
@@ -25,7 +25,7 @@ const Hero = () => {
         <PieChart />
       </div>
       <div className={classes.table_section}>
-        <UsersTable />
+        <ItemsTable />
         <UserCard />
       </div>
     </div>

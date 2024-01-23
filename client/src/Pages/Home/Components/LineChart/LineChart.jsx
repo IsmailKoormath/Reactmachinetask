@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './LineChart.module.css';
 import { Line } from 'react-chartjs-2';
 import {
@@ -8,6 +8,7 @@ import {
     LinearScale,
     PointElement
 } from 'chart.js';
+import axios from 'axios';
 
 Chartjs.register(
     LineElement,
@@ -15,17 +16,6 @@ Chartjs.register(
     LinearScale,
     PointElement
 );
-
-const data = {
-    labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
-    datasets: [{
-        data: [10, 15, 8, 12, 18],
-        fill: false,
-        borderColor: 'rgb(124, 196, 196)',
-        backgroundColor: 'rgb(124, 196, 196)',
-        tension: 0.1
-    }]
-};
 
 const options = {
     responsive: true,
@@ -45,10 +35,32 @@ const options = {
 };
 
 const LineChart = () => {
+    const [progress, setProgress] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/api/graph').then((response) => {
+            console.log(response.data);
+            setProgress(response.data);
+        });
+    }, []);
+
+    const chartData = {
+        labels: progress.map(item => item.x),
+        datasets: [
+            {
+                data: progress.map(item => item.y),
+                fill: false,
+                borderColor: 'rgb(124, 196, 196)',
+                backgroundColor: 'rgb(124, 196, 196)',
+                tension: 0.1
+            }
+        ]
+    };
+
     return (
         <div className={classes.linechart}>
             <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                <Line data={data} options={options} />
+                <Line data={chartData} options={options} />
             </div>
         </div>
     );

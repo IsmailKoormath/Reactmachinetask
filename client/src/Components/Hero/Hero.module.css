@@ -1,0 +1,10 @@
+.Hero_section{
+    width: 100%;
+    padding: 3rem 5rem;
+    background-color: #E8EDFF;
+}
+.Hero_section h4{
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}

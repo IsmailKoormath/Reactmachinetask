@@ -1,0 +1,8 @@
+.linechart{
+    width: 50rem;
+    height: 25rem;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px;
+}

@@ -55,7 +55,7 @@ const PieChart = () => {
 
     return (
         <div className={classes.Pie_chart}>
-            <div style={{width:'13rem' ,height:'13rem'}}>
+            <div className={classes.pie}>
                 <Pie data={data} options={options} />
             </div>
             <ul className={classes.LabelList}>

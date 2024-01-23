@@ -37,6 +37,7 @@
   padding: 1rem 2rem;
   color: red;
   font-size: 15px;
+  cursor: pointer;
 }
 .logout img {
   margin-top: 3px;

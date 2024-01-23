@@ -2,11 +2,11 @@
 Statboard
 
 
-Navigate to the project's client directory:
-cd client
+<h5>Navigate to the project's client directory:</h5>h5
+<h4>cd client</h4>
 
-Install the dependencies:
-npm install
+<h5Install the dependencies:</h5>
+<h4>npm install</h4>
 
-Usage: to start the frontend
-npm start
+<h5>Usage: to start the frontend:</h5>
+<h4>npm start</h4>

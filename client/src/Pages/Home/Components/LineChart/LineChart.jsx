@@ -39,7 +39,6 @@ const LineChart = () => {
 
     useEffect(() => {
         axios.get('http://localhost:3001/api/graph').then((response) => {
-            console.log(response.data);
             setProgress(response.data);
         });
     }, []);

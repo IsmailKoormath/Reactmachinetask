@@ -1,10 +1,13 @@
 .custombutton {
   display: flex;
-  gap: 1rem;
-  min-width: 12rem;
-  padding: 1rem 2.3rem;
-  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  gap: .6rem;
+  min-width: 11rem;
+  padding: .8rem 2.3rem;
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+.custombutton img{
+  object-fit: contain;
 }

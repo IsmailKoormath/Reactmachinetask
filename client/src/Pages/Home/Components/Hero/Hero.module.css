@@ -17,6 +17,7 @@
 }
 .Hero_section h4 img {
   width: 2.5rem;
+    object-fit: contain;
 }
 .hero_top {
   display: flex;
@@ -46,6 +47,7 @@
 }
 .profile img {
   padding: 0.3rem 0 0.3rem 0.3rem;
+    object-fit: contain;
 }
 .chartSection {
   width: 100%;

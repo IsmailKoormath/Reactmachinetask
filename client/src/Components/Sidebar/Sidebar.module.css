@@ -41,6 +41,7 @@
 }
 .logout img {
   margin-top: 3px;
+  object-fit: contain;
 }
 @media screen and (max-width: 1200px) {
   .sidebar {

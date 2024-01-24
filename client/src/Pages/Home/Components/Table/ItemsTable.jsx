@@ -16,7 +16,7 @@ const ItemsTable = () => {
     return (
         <>
             <div className={classes.users}>
-                <Table striped bordered hover>
+                <Table striped bordered hover className={classes.table}>
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -27,7 +27,7 @@ const ItemsTable = () => {
                     </thead>
                     <tbody>
                         {items.map((item)=>(
-                            <tr key={item.id}>
+                            <tr key={item.id} >
                                 <td>{item.id}</td>
                                 <td>{item.name}</td>
                                 <td>{item.price}</td>

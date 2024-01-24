@@ -12,8 +12,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0rem;
-  gap: 0.5rem;
+  padding: .5rem 0 1rem 0;
+  gap: 0.8rem;
+}
+.userDetails  h6{
+    font-weight: 700;
+    line-height: .2rem;
+    margin-top: 0.5rem;
+}
+.userDetails span{
+    color: gray;
+    line-height: 1rem;
 }
 .mediaLinks {
   display: flex;

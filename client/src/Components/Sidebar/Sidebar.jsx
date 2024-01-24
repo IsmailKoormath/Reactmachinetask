@@ -11,9 +11,9 @@ import cross from '../../Assets/cross.png'
 import classes from './Sidebar.module.css'
 import CustomButton from '../CustomButton/CustomButton'
 
-const Sidebar = ({ handleSidebar }) => {
+const Sidebar = ({ handleSidebar,show }) => {
   return (
-    <div className={classes.sidebar}>
+    <div className={`${classes.sidebar} ${show && classes.show}`}>
       <img className={classes.cross} onClick={handleSidebar} src={cross} alt="cross" />
       <div className={classes.logo}>
         <img src={Briefcase} alt="Briefcase" />

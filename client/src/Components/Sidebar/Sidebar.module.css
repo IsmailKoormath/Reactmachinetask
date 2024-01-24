@@ -46,6 +46,19 @@
 @media screen and (max-width: 1200px) {
   .sidebar {
     display: none;
+  } 
+  .show{
+    display: block;
+    position: fixed;
+   top: 0;
+   left: 0;
+  width: 12rem;
+  background-image: url("../../Assets/Rectangle\ 1.png ");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9;
   }
   .cross {
     display: block;

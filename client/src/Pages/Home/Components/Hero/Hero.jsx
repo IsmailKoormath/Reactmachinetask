@@ -12,7 +12,7 @@ const Hero = ({ handleSidebar, viewsidebar }) => {
   return (
     <div className={classes.Hero_section}>
       <div className={classes.hero_top}>
-        {viewsidebar?" ": <img onClick={handleSidebar} className={classes.menuIcon} src={menu} alt="menu" />}
+        <img onClick={handleSidebar} className={classes.menuIcon} src={menu} alt="menu" />
         <h4>Good Monrning ! <img src={smile} alt="smile" /></h4>
         <div className={classes.profile}>
           <div className={classes.profileDetails}>

@@ -17,7 +17,7 @@
 }
 .Hero_section h4 img {
   width: 2.5rem;
-    object-fit: contain;
+  object-fit: contain;
 }
 .hero_top {
   display: flex;
@@ -47,7 +47,7 @@
 }
 .profile img {
   padding: 0.3rem 0 0.3rem 0.3rem;
-    object-fit: contain;
+  object-fit: contain;
 }
 .chartSection {
   width: 100%;
@@ -62,8 +62,8 @@
 }
 @media screen and (max-width: 1200px) {
   .Hero_section {
-  padding: 3rem 3rem;
-}
+    padding: 3rem 3rem;
+  }
   .table_section {
     flex-wrap: wrap;
     justify-content: center;
@@ -76,12 +76,20 @@
     display: block;
   }
 }
-@media screen and (max-width: 380px) {
-  .hero_top {
-    flex-direction: column;
-    margin-bottom: 2rem;
+@media screen and (max-width: 600px) {
+  .Hero_section h4 {
+    margin-bottom: 1rem;
   }
   .Hero_section {
-  padding: 3rem 2rem;
+    padding: 2rem 2rem;
+  }
+  .hero_top {
+    margin-bottom: 1rem;
+  }
 }
+@media screen and (max-width: 500px) {
+  .hero_top {
+     flex-direction: column;
+  }
 }
+

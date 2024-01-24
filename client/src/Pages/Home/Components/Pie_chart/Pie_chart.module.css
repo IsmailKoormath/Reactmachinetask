@@ -1,7 +1,7 @@
 .Pie_chart {
-  max-width: 20rem;
+  max-width: 21rem;
   width: 100%;
-  max-height: 24rem;
+  max-height: 25rem;
   padding: 0.3rem 0;
   background-color: white;
   border-radius: 1rem;
@@ -10,7 +10,7 @@
 .pie {
   padding: 1.5rem;
   width: 100%;
-  max-height: 13rem;
+  max-height: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;

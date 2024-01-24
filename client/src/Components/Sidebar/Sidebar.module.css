@@ -1,13 +1,14 @@
 .sidebar {
   position: sticky;
   top: 0;
-  width: 18%;
+  width: 15rem;
   background-image: url("../../Assets/Rectangle\ 1.png ");
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 9;
+  overflow: auto;
 }
 .cross {
   width: 1.5rem;
@@ -26,6 +27,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-left: 2rem;
+  margin-top: 2rem;
   gap: 1.5rem;
 }
 .logout {
@@ -46,19 +49,19 @@
 @media screen and (max-width: 1200px) {
   .sidebar {
     display: none;
-  } 
-  .show{
+  }
+  .show {
     display: block;
     position: fixed;
-   top: 0;
-   left: 0;
-  width: 12rem;
-  background-image: url("../../Assets/Rectangle\ 1.png ");
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 9;
+    top: 0;
+    left: 0;
+    width: 13rem;
+    background-image: url("../../Assets/Rectangle\ 1.png ");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9;
   }
   .cross {
     display: block;

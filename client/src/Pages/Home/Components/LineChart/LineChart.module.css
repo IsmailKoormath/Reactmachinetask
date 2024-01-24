@@ -1,9 +1,9 @@
 .linechart {
     width: 46rem;
     width: 100%;
-    max-height: 23;
+    /* max-height: 23rem; */
     background-color: white;
-    padding: 0rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
